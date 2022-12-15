@@ -2,7 +2,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 url='https://pubmed.ncbi.nlm.nih.gov/?term='
-inp='computer networks'
+inp=input('enter the any query-regarding the medical field..: ')
 text=requests.get(f'https://pubmed.ncbi.nlm.nih.gov/?term={inp}').text
 #print(text)
 link=[]
